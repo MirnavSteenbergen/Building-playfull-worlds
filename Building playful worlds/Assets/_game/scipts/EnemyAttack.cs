@@ -7,9 +7,12 @@ public class EnemyAttack : MonoBehaviour
     public float attackSpeed = 2;
     private float cooldown = 0;
     private Animator anim;
+    public Collider Hitboxenemysword;
+
     // Start is called before the first frame update
     void Start()
     {
+        Hitboxenemysword.enabled = false;
         anim = GetComponent<Animator>();
     }
 
@@ -27,7 +30,9 @@ public class EnemyAttack : MonoBehaviour
     IEnumerator AttackAnimation()
     {
         anim.SetBool("Attack", true);
+        Hitboxenemysword.enabled = true;
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
         anim.SetBool("Attack", false);
+        Hitboxenemysword.enabled = false;
     }
 }

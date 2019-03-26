@@ -10,12 +10,7 @@ public class PlayerAttack : MonoBehaviour
     private float cooldown = 0;
     public float totalAttackTime = 1;
     public AnimationCurve animationCurve;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
