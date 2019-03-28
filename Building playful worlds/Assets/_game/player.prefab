@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &520278699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 520278700}
-  - component: {fileID: 520278701}
-  m_Layer: 9
-  m_Name: hitbox net
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &520278700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520278699}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.262, y: -0.137, z: -2.732}
-  m_LocalScale: {x: 0.26400188, y: 0.49822962, z: 0.2893269}
-  m_Children: []
-  m_Father: {fileID: 7115526923552934624}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &520278701
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520278699}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +466,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.70528036
       objectReference: {fileID: 0}
+    - target: {fileID: 4832038631569825298, guid: 7e4c8cbcdc6c5e247b8fda2b639403ae,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832038631569825298, guid: 7e4c8cbcdc6c5e247b8fda2b639403ae,
+        type: 3}
+      propertyPath: m_TagString
+      value: weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 8549673292923107200, guid: 7e4c8cbcdc6c5e247b8fda2b639403ae,
         type: 3}
       propertyPath: m_Layer
@@ -524,16 +490,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4832038631569825298, guid: 7e4c8cbcdc6c5e247b8fda2b639403ae,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4832038631569825298, guid: 7e4c8cbcdc6c5e247b8fda2b639403ae,
-        type: 3}
-      propertyPath: m_TagString
-      value: weapon
       objectReference: {fileID: 0}
     - target: {fileID: 3926932304895915092, guid: 7e4c8cbcdc6c5e247b8fda2b639403ae,
         type: 3}
@@ -765,6 +721,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434900221766289326, guid: 96aad79a5456dc94d87a0969f20ad38d,
+        type: 3}
+      propertyPath: m_Name
+      value: placeholder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560505570486686180, guid: 96aad79a5456dc94d87a0969f20ad38d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96aad79a5456dc94d87a0969f20ad38d, type: 3}

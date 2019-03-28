@@ -6,6 +6,8 @@ TagManager:
   tags:
   - weapon
   - weaponEnemy
+  - Firefly
+  - Net
   layers:
   - Default
   - TransparentFX
