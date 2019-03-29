@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour
     public float totalAttackTime = 1;
     public AnimationCurve animationCurve;
     
-    // Update is called once per frame
+    // Attackcooldown so player doesn't spam attack
     void Update()
     {
         cooldown -= Time.deltaTime;
@@ -22,6 +22,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    // attack animation
     IEnumerator SwordAnimation()
     {
         float t = 0;

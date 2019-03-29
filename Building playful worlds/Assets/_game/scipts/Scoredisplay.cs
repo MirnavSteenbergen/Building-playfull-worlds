@@ -13,6 +13,7 @@ public class Scoredisplay : MonoBehaviour
         Scoretext.text = Playerscore.ToString();
     }
 
+    // pull score from script: Firefly_catching
     public void UpdateScore(int score)
     {
         Playerscore = score;

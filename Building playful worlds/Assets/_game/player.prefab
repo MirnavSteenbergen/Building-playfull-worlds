@@ -142,7 +142,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0.9211649, b: 0.5896226, a: 1}
   m_Intensity: 5
-  m_Range: 4.1671305
+  m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -612,6 +612,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6451677
       objectReference: {fileID: 0}
+    - target: {fileID: 7560505570486686180, guid: 96aad79a5456dc94d87a0969f20ad38d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3178205219416767868, guid: 96aad79a5456dc94d87a0969f20ad38d,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -726,11 +731,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: placeholder
-      objectReference: {fileID: 0}
-    - target: {fileID: 7560505570486686180, guid: 96aad79a5456dc94d87a0969f20ad38d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96aad79a5456dc94d87a0969f20ad38d, type: 3}

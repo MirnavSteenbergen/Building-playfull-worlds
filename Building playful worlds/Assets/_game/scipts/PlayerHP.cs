@@ -16,7 +16,7 @@ public class PlayerHP : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
+    { //player only loses HP when hit by enemy weapon
         if (other.tag == "weaponEnemy")
         {
             HPcurrentPlayer -= weapondamageOnPlayer;
@@ -28,7 +28,7 @@ public class PlayerHP : MonoBehaviour
             }
         }
     }
-
+    //debug for player HP in UI display and deathUI
    /* private void Update()
     {
         if (Input.GetKeyDown(KeyCode.L))
@@ -38,6 +38,7 @@ public class PlayerHP : MonoBehaviour
         }
     }*/
 
+    // triggers game over screen
      void Playerdeath()
       {
         Gameoverscreen.SetActive(true);

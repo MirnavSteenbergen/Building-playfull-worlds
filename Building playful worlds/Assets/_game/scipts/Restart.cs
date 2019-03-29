@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
-{
+{ //script is only active if player dies (check PlayerHP script)
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -14,7 +14,7 @@ public class Restart : MonoBehaviour
     }
     public void RestartGame()
     {
-        Debug.Log("We zijn er!");
+        //Debug.Log("We zijn er!");
         SceneManager.LoadScene(0);
     }
 }

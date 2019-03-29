@@ -16,7 +16,7 @@ public class Weaponmanager : MonoBehaviour
 
     // Update is called once per frame
     private void Update()
-    {
+    { // when E is pressed weapon will be switched
         if (Input.GetKeyDown(KeyCode.E))
         {
             index++;
@@ -30,7 +30,7 @@ public class Weaponmanager : MonoBehaviour
 
     private void SwitchWeapon(int newIndex)
     {
-        
+        // determine which weapon to show and set it active
         for (int i = 0; i < weapons.Length; i++)
             weapons[i].gameObject.SetActive(false);
 
