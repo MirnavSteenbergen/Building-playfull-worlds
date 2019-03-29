@@ -5,6 +5,7 @@ public class PlayerHP : MonoBehaviour
     public int HPmaxPlayer = 10;
     public int HPcurrentPlayer;
     public int weapondamageOnPlayer = 1;
+    public int Potionheal = 5;
     public GameObject HPdisplayUI;
     public GameObject Gameoverscreen;
 
@@ -27,19 +28,27 @@ public class PlayerHP : MonoBehaviour
                 Playerdeath();
             }
         }
-    }
-    //debug for player HP in UI display and deathUI
-   /* private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.L))
+        // heals player when potion is picked up
+        if (other.tag == "potion")
         {
-            HPcurrentPlayer -= weapondamageOnPlayer;
+            HPcurrentPlayer += Potionheal;
             HPdisplayUI.GetComponent<HPdisplay>().UpdateHP(HPcurrentPlayer);
+
         }
-    }*/
+    }
+
+    //debug for player HP in UI display and deathUI
+    /* private void Update()
+     {
+         if (Input.GetKeyDown(KeyCode.L))
+         {
+             HPcurrentPlayer -= weapondamageOnPlayer;
+             HPdisplayUI.GetComponent<HPdisplay>().UpdateHP(HPcurrentPlayer);
+         }
+     }*/
 
     // triggers game over screen
-     void Playerdeath()
+    void Playerdeath()
       {
         Gameoverscreen.SetActive(true);
       }

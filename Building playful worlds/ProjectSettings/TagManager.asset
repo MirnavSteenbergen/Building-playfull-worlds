@@ -8,6 +8,7 @@ TagManager:
   - weaponEnemy
   - Firefly
   - Net
+  - potion
   layers:
   - Default
   - TransparentFX

@@ -29,8 +29,8 @@ public class Firefly_catching : MonoBehaviour
         }
     }
 
-    // debug/cheat function
-    /*private void Update()
+    /*// debug/cheat function
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.L))
         {

@@ -3,7 +3,10 @@ guid: b421ecfc56f6fbc41b7b562e318f79fa
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sword: {instanceID: 0}
+  - swooshsword: {fileID: 8300000, guid: 30e50410e379f7245b43e08582eade1e, type: 3}
+  - soundsource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

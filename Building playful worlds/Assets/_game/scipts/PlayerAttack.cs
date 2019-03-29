@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -10,13 +11,22 @@ public class PlayerAttack : MonoBehaviour
     private float cooldown = 0;
     public float totalAttackTime = 1;
     public AnimationCurve animationCurve;
-    
+    public AudioClip swooshsword;
+    public AudioSource soundsource;
+
+    private void Start()
+    {
+        soundsource.clip = swooshsword;
+
+    }
+
     // Attackcooldown so player doesn't spam attack
     void Update()
     {
         cooldown -= Time.deltaTime;
         if (Input.GetMouseButtonDown(0) && cooldown < 0)
         {
+            soundsource.Play();
             StartCoroutine(SwordAnimation());
             cooldown = attackSpeed;
         }
